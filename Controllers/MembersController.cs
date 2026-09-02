@@ -19,6 +19,6 @@ public class MembersController : ControllerBase
     [HttpGet("count")]
     public IActionResult GetCount()
     {
-        return Ok(new { total = 5 });
+        return Ok(new { total = 2 });
     }
 }
