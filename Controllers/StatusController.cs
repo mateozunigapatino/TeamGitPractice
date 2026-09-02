@@ -12,11 +12,9 @@ public class StatusController : ControllerBase
         return Ok(new { status = "Running" });
     }
 
-
-    [HttpGet]
+    [HttpGet("team")]
     public IActionResult GetTeamStatus()
     {
-        return Ok(new { team = "Trio Dinamico", status = "Listo" });
+        return Ok(new { team = "Trio Dinamico", status = "Ready" });
     }
 }
-    
